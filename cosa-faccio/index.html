@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- CSS -->
+  <link id="theme" type="text/css" rel="stylesheet" href="../assets/scss/style.css" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/8306e2c94c.js" crossorigin="anonymous"></script>
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+  <!-- Title -->
+  <title>W | Sviluppatore e scrittore</title>
+</head>
+
+<body>
+
+  <header>
+
+    <!-- Menu desktop -->
+    <div class="sidenav">
+      <nav>
+        <ul>
+          <li><a class="logo-d" href="../index.html">W</a></li>
+          <li><a href="../chi-sono/">Chi sono</a></li>
+          <li><a href="../cosa-faccio/">Cosa faccio</a></li>
+          <li><a href="../portfolio/">Portfolio</a></li>
+          <li><a href="../contatti/">Contatti</a></li>
+        </ul>
+
+        <div class="social-d">
+          <a href="https://www.instagram.com/andreawembacher/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/andrea-wembacher-a388a21a2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/andreawembacher" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Dark mode button -->
+    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="toggle dark mode">
+      <img class="sun-moon" src="../assets/images/sun-moon.png" alt="dark-mode button">
+    </button>
+
+  </header>
+
+
+  <section>
+    <!-- Title -->
+    <div class="cosafaccio-title margin-menu margin-left">
+      <div class="entities">
+        <p class="html">&lt;html&gt;</p>
+        <p class="body">&lt;body&gt;</p>
+      </div>
+
+      <div>
+        <p class="entities">&lt;h2&gt;</p>
+        <h2>Cosa faccio</h2>
+        <p class="entities">&lt;/h2&gt;</p>
+      </div>
+
+    </div>
+
+    <!-- Content -->
+    <div class="cosafaccio-container margin-menu margin-left">
+      <div class="cosafaccio-text">
+        <p class="entities">&lt;p&gt;</p>
+        <p class="paragraph-space">
+          L'istinto alla narrazione è intrinseco nell'essere umano, che se ne serve per interpretare la realtà attraverso l'elaborazione di storie.
+        </p>
+        <p class="paragraph-space">
+          Queste storie possono essere raccontate in modi diversi e attraverso mezzi diversi, senza però perdere il loro carattere narrativo. Secondo Calvino e Barthes, <i> qualsiasi testo racconta una storia, dalla ricetta di cucina al bilancio di una società</i>. Lo stesso vale per un sito web o un'applicazione.
+        </p>
+        <p class="paragraph-space">
+          Affascinato dall'impossibilità di fuggire dalla logica narrativa, con il tempo è cresciuto in me il desiderio di imparare a raccontare delle storie. Per questo motivo, seguo a tempo pieno il corso di sviluppo web su <a class="link-underline" href="https://www.start2impact.it/" target="_blank">Start2Impact</a> per diventare Full Stack Developer e uno dei corsi di narrazione tenuto da Anna Traini su <a class="link-underline" href="https://www.reveri.it/" target="_blank">Reverì</a>.
+        </p>
+        <p class="paragraph-space">
+          Il mondo dello sviluppo web e quello della narrativa non sono lontani tra loro: entrambi costruiscono mondi attraverso un codice e, sebbene utilizzino linguaggi differenti, le storie restano storie.
+        </p>
+        <p>
+          Dai un'occhiata al mio <a href="../portfolio/" class="link-underline">portfolio</a> e al mio <a class="link-underline" href="../assets/pdf/andrea-wembacher-cv.pdf" target="_blank">curriculum</a> per vedere l'esperienza che ho accumulato finora.
+        </p>
+        <p class="entities">&lt;/p&gt;</p>
+      </div>
+
+      <div class="skills-bar">
+        <p class="entities">&lt;div&gt;</p>
+        <h5>Le mie skills</h5>
+
+        <div class="bar">
+          <div class="info">
+            <span>HTML</span>
+          </div>
+          <div class="progress-line html-bar"><span></span></div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>CSS</span>
+          </div>
+          <div class="progress-line css"><span></span></div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>Sass</span>
+          </div>
+          <div class="progress-line sass"><span></span></div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>JavaScript</span>
+          </div>
+          <div class="progress-line javascript"><span></span></div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>Git</span>
+          </div>
+          <div class="progress-line git"><span></span></div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>Scrittura creativa</span>
+          </div>
+          <div class="progress-line scrittura"><span></span></div>
+        </div>
+
+        <p class="entities">&lt;/div&gt;</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Menu mobile e tablet -->
+  <header>
+    <span class="openbtn" onclick="openNav()">&#9776;</span>
+
+    <div class="overlay" id="myNav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <nav class="overlay-menu">
+        <ul>
+          <li><a class="logo-m" href="../index.html">W</a></li>
+          <li><a href="../chi-sono/">Chi sono</a></li>
+          <li><a href="../cosa-faccio/">Cosa faccio</a></li>
+          <li><a href="../portfolio/">Portfolio</a></li>
+          <li><a href="../contatti/">Contatti</a></li>
+        </ul>
+
+        <div class="social-m">
+          <a href="https://www.instagram.com/andreawembacher/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/andrea-wembacher-a388a21a2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/andreawembacher" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <footer>
+    <div>
+      <div class="social">
+        <a href="https://www.instagram.com/andreawembacher/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/andrea-wembacher-a388a21a2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/andreawembacher" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <p>Copyright &copy; 2021 Andrea Wembacher</p>
+    </div>
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/darkmode.js"></script>
+
+</body>
+
+</html>

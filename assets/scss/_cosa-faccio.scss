@@ -1,0 +1,173 @@
+.cosafaccio-title {
+  margin-bottom: 1rem;
+
+  .body {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.cosafaccio-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/*Animazione barre di progresso*/
+.skills-bar {
+  width: 100%;
+
+  .bar {
+    margin: 1.5rem 0;
+
+    .info {
+      margin-bottom: 0.2rem;
+
+      span {
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+    }
+
+    .progress-line {
+      position: relative;
+      height: 0.2rem;
+      width: 100%;
+      background-color: #818181;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+                        0 0.3px rgba(1, 1, 1, 0.8);
+
+      span {
+        height: 100%;
+        position: absolute;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .bar:first-of-type {
+    margin-top: 0.5rem;
+  }
+  .bar:last-of-type {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.progress-line.html-bar span {
+  width: 65% !important;
+  background-color: #e34c26;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0.8, 0.5, 0.8) forwards;
+}
+.progress-line.css span {
+  width: 65% !important;
+  background-color: #2965f1;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0.8, 0.6, 0.8) forwards;
+}
+.progress-line.javascript span {
+  width: 40% !important;
+  background-color: #323330;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0.8, 0.6, 0.8) forwards;
+}
+.progress-line.sass span {
+  width: 65% !important;
+  background-color: #cc6699;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0.8, 0.6, 0.8) forwards;
+}
+.progress-line.git span {
+  width: 50% !important;
+  background-color:#3d2d00;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0.8, 0.6, 0.8) forwards;
+}
+.progress-line.scrittura span {
+  width: 65% !important;
+  background-color: lighten(#2D4A56, 20%);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0.8, 0.6, 0.8) forwards;
+}
+
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+
+
+/////////////////////////////////////////
+//Media queries//
+
+/* extra-small screen */
+@media (max-width: 400px){
+  .cosafaccio-container {
+    width: 90%;
+  }
+}
+
+
+/* small-screen */
+@media (min-width: 400px) and (max-width: 576px) {
+  .cosafaccio-container {
+    width: 90%;
+  }
+}
+
+
+/* medium-screen */
+@media (min-width: 576px) and (max-width: 768px) {
+  .cosafaccio-text {
+    width: 50%;
+  }
+
+  .skills-bar {
+    width: 40%;
+    margin-left: 2rem;
+  }
+}
+
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 992px) {
+  .cosafaccio-text {
+    width: 50%;
+  }
+
+  .skills-bar {
+    width: 40%;
+    margin-left: 2rem;
+  }
+}
+
+
+/* large-screen */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cosafaccio-text {
+    width: 50%;
+  }
+
+  .skills-bar {
+    width: 40%;
+    margin-left: 2rem;
+  }
+}
+
+
+/* Extra large screen */
+@media (min-width: 1200px) {
+  .cosafaccio-text {
+    width: 50%;
+  }
+
+  .skills-bar {
+    width: 40%;
+    margin-left: 2rem;
+  }
+}

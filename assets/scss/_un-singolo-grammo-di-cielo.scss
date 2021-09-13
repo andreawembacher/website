@@ -1,0 +1,98 @@
+.libro-title {
+  margin-bottom: 1rem;
+
+  .body {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.incipit {
+  .first-p {
+    text-align: justify;
+    padding-right: 1rem;
+  }
+}
+
+.libro-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+///Media queries///////////////
+
+/* extra-small screen */
+@media (max-width: 400px){
+  .libro-container {
+    width: 90%;
+  }
+
+  .libro-picture {
+    width: 80%;
+  }
+}
+
+
+/* small-screen */
+@media (min-width: 400px) and (max-width: 576px) {
+  .libro-container {
+    width: 90%;
+  }
+
+  .libro-picture {
+    width: 80%;
+  }
+}
+
+
+/* medium-screen */
+@media (min-width: 576px) and (max-width: 768px) {
+  .libro-text {
+    width: 50%;
+  }
+
+  .libro-picture {
+    width: 40%;
+    margin-left: 1.8rem;
+  }
+}
+
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 992px) {
+  .libro-text {
+    width: 55%;
+  }
+
+  .libro-picture {
+    width: 30%;
+    margin: 0 auto;
+  }
+}
+
+
+/* large-screen */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .libro-text {
+    width: 55%;
+  }
+
+  .libro-picture {
+    width: 25%;
+    margin: 0 auto;
+  }
+}
+
+
+/* Extra large screen */
+@media (min-width: 1200px) {
+  .libro-text {
+    width: 55%;
+  }
+
+  .libro-picture {
+    width: 25%;
+    margin: 0 auto;
+  }
+}

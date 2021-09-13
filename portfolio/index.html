@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- CSS -->
+  <link id="theme" type="text/css" rel="stylesheet" href="../assets/scss/style.css" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/8306e2c94c.js" crossorigin="anonymous"></script>
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+  <!-- Title -->
+  <title>W | Sviluppatore e scrittore</title>
+</head>
+
+<body>
+
+  <header>
+
+    <!-- Menu desktop -->
+    <div class="sidenav">
+      <nav>
+        <ul>
+          <li><a class="logo-d" href="../index.html">W</a></li>
+          <li><a href="../chi-sono">Chi sono</a></li>
+          <li><a href="../cosa-faccio">Cosa faccio</a></li>
+          <li><a href="../portfolio">Portfolio</a></li>
+          <li><a href="../contatti">Contatti</a></li>
+        </ul>
+
+        <div class="social-d">
+          <a href="https://www.instagram.com/andreawembacher/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/andrea-wembacher-a388a21a2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/andreawembacher" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Dark mode button -->
+    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="toggle dark mode">
+      <img class="sun-moon" src="../assets/images/sun-moon.png" alt="dark-mode button">
+    </button>
+
+  </header>
+
+  <section>
+
+    <div class="portfolio-title margin-menu margin-left">
+      <div class="entities">
+        <p class="html">&lt;html&gt;</p>
+        <p class="body">&lt;body&gt;</p>
+      </div>
+
+      <div>
+        <p class="entities">&lt;h2&gt;</p>
+        <h2>Portfolio</h2>
+        <p class="entities">&lt;/h2&gt;</p>
+      </div>
+    </div>
+
+    <div class="portfolio-container margin-menu margin-left">
+
+      <p class="entities">&nbsp;&nbsp;&lt;div&gt;</p>
+      <div class="photo-grid-container">
+        <div class="photo-grid">
+          <div class="photo-grid-item item-1">
+            <a href="marameo/"><img src="../assets/images/marameo.jpg" alt="Bambina fa marameo"/></a>
+          </div>
+          <div class="photo-grid-item item-2">
+            <a href="un-singolo-grammo-di-cielo/"><img src="../assets/images/copertina-un-singolo-grammo-di-cielo.jpg" alt="Copertina del libro Un singolo grammo di cielo"/></a>
+          </div>
+          <div class="photo-grid-item item-3">3</div>
+          <div class="photo-grid-item item-4">4</div>
+          <div class="photo-grid-item item-5">5</div>
+          <div class="photo-grid-item item-6">6</div>
+          <div class="photo-grid-item item-7">7</div>
+          <div class="photo-grid-item item-8">8</div>
+        </div>
+      </div>
+      <p class="entities">&nbsp;&nbsp;&lt;/div&gt;</p>
+
+    </div>
+
+  </section>
+
+
+  <!-- Menu mobile e tablet -->
+  <header>
+    <span class="openbtn" onclick="openNav()">&#9776;</span>
+
+    <div class="overlay" id="myNav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <nav class="overlay-menu">
+        <ul>
+          <li><a class="logo-m" href="../index.html">W</a></li>
+          <li><a href="../chi-sono">Chi sono</a></li>
+          <li><a href="../cosa-faccio">Cosa faccio</a></li>
+          <li><a href="../portfolio">Portfolio</a></li>
+          <li><a href="../contatti">Contatti</a></li>
+        </ul>
+
+        <div class="social-m">
+          <a href="https://www.instagram.com/andreawembacher/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/andrea-wembacher-a388a21a2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/andreawembacher" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <footer>
+    <div>
+      <div class="social">
+        <a href="https://www.instagram.com/andreawembacher/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/andrea-wembacher-a388a21a2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/andreawembacher" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <p>Copyright &copy; 2021 Andrea Wembacher</p>
+    </div>
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/darkmode.js"></script>
+
+</body>
+
+</html>

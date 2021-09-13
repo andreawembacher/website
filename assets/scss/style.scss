@@ -1,0 +1,600 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: lighten(#fcca46, 6%);
+  color: #17252B;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 80px;
+  transition: 0.3s linear;
+}
+
+.darkmode {
+  background-color: darken(#2D4A56, 15%);
+  color: lighten(#fcca46, 25%);
+
+  h1, h2, h3, h4, h5, h6 {
+    color: lighten(#fcca46, 6%);
+  }
+
+  .dark-mode-toggle {
+    background-color: lighten(#fcca46, 25%);
+    border-radius: 50%;
+  }
+
+  .sidenav {
+    background-color: darken(#2D4A56, 11%);
+
+    a {
+      border-bottom: 1px solid lighten(#fcca46, 25%);
+    }
+
+    .social-d {
+      a {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .overlay {
+    a {
+      border-bottom: 1px solid lighten(#fcca46, 25%);
+    }
+
+    .open-button {
+      border-bottom: none;
+    }
+
+    .closebtn {
+      border-bottom: none;
+    }
+
+    .social-m {
+      a {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .typed-text, .link-underline, .coming-soon h5, .plane, .plane-contatti {
+    color: #f05454;
+  }
+
+  .link-underline::after {
+    background-color: #f05454;
+  }
+
+  .skill-container {
+    .coming-soon {
+      h5 {
+        color: #f05454;
+      }
+    }
+  }
+
+  .devicon {
+    .devicon-icon {
+      color: lighten(#fcca46, 12%);
+    }
+  }
+
+  footer {
+    background-color: darken(#2D4A56, 20%);
+    margin-top: 1rem;
+  }
+  footer > div {
+    .social {
+      a {
+        color: lighten(#fcca46, 12%);
+      }
+      a:hover {
+        color: #f05454;
+      }
+    }
+  }
+}
+
+header, section {
+  padding-left: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  color: darken(#2D4A56, 10%);
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #fcca46;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+footer > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+
+  .social {
+    display: flex;
+    justify-content: center;
+
+    a {
+      color: darken(#2D4A56, 10%);
+      font-size: 1.8rem;
+      padding: 0 1rem;
+      transition: 0.4s;
+    }
+    a:hover {
+      color: #b02f2f;
+    }
+  }
+}
+
+.paragraph-space {
+  margin-bottom: 0.5rem;
+}
+
+.entities {
+  font-size: 1rem;
+  margin: 0.2rem 0 0.2rem -0.4rem;
+  font-family: 'Reenie Beanie', cursive;
+
+  .html {
+    margin-left: -0.4rem;
+  }
+  .body {
+    margin-left: -0.2rem;
+  }
+}
+
+.margin-left {
+  margin-left: 0.4rem;
+}
+
+.link-underline {
+  text-decoration: none;
+  color: darken(#b02f2f, 10%);
+  display: inline-block;
+}
+.link-underline::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0.1rem;
+  background-color: darken(#b02f2f, 10%);
+  transition: width 0.4s;
+}
+.link-underline:hover::after {
+  width: 100%;
+  transition: width 0.4s;
+}
+
+
+
+/* button Menu */
+.openbtn {
+  font-size: 2.8rem;
+  cursor: pointer;
+  position: fixed;
+  top: -9px;
+  right: 2px;
+}
+
+/*Menu a scomparsa*/
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(23,37,43);
+  background-color: rgba(23,37,43, 0.98); /*RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color*/
+  overflow-y: hidden;
+  transition: 0.5s;
+
+  .closebtn {
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    padding-right: 0.2rem;
+    font-size: 3.5rem;
+    border-bottom: none;
+  }
+
+  .overlay-menu {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo-m {
+    font-size: 3.5rem;
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+  }
+
+  a {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: lighten(#fcca46, 25%);
+    display: block;
+    transition: 0.4s;
+    border-bottom: 1px solid darken(#2D4A56, 10%);
+  }
+
+  a:hover {
+    color: lighten(#fcca46, 6%);
+  }
+
+  .social-m {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+
+    a {
+      border-bottom: none;
+      padding: 1rem;
+      font-size: 1.8rem;
+    }
+
+    a:hover {
+      color: #f05454;
+    }
+  }
+}
+
+
+/* Menu fisso */
+.sidenav {
+  height: 100%;
+  width: 11%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: darken(#2D4A56, 5%);
+  overflow-x: hidden;
+  padding-top: 20px;
+
+  .logo-d {
+    font-size: 3.5rem;
+    font-weight: 400;
+    padding: 4rem 0 4rem 0;
+  }
+
+  a {
+    text-align: center;
+    padding: 1.2rem 0 1.2rem 0;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: lighten(#fcca46, 25%);
+    display: block;
+    border-bottom: 1px solid darken(#2D4A56, 10%);
+    transition: 0.4s;
+  }
+
+  a:hover {
+    color: lighten(#fcca46, 5%);
+  }
+
+  .social-d {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.5rem;
+
+    a {
+      border-bottom: none;
+      padding-top: 1.5rem;
+      font-size: 1.4rem;
+    }
+
+    a:hover {
+      color: #f05454;
+    }
+  }
+}
+
+/*Dark mode*/
+.dark-mode-toggle {
+  position: absolute;
+  left: 45%;
+  background-color: lighten(#fcca46, 6%);
+  border: none;
+  transition: 0.3s linear;
+
+
+  .sun-moon {
+    position: relative;
+  }
+  .sun-moon:hover {
+    cursor: pointer;
+  }
+}
+
+
+/* Ciao, sono wemb */
+.header-container {
+  height:100vh;
+  min-height:100vh;
+  position: relative;
+
+  .body {
+    margin-bottom: 5rem;
+  }
+
+  .title {
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+/* Typewriting effect */
+.typed-text {
+  font-weight: 600;
+  color: #b02f2f;
+}
+
+.cursor {
+  font-weight: 300;
+  margin-left: -0.2rem;
+  animation: blink 1s infinite;
+}
+.typing {
+  animation: none;
+}
+/* The @keyframes rule specifies the animation code: the animation is created by gradually changing from one set of CSS styles to another.*/
+@keyframes blink {
+  0% { color: darken(#1d313f, 10%); }
+  25% { color: darken(#1d313f, 10%); }
+  50% { color: transparent; }
+  75% { color: transparent;}
+  100% { color: darken(#1d313f, 10%); }
+}
+
+
+/* scrolling-down suggestion */
+.scrolling-down {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: flex-end;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    animation: bounce 1.2s ease-out infinite;
+  }
+  @keyframes bounce {
+    0% { transform: translateY(-1.5rem); }
+    25% { transform: translateY(-1.5rem); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(0);}
+    100% { transform: translateY(-1.5rem); }
+  }
+
+  .scrolling-dx {
+    right: 0.5rem;
+  }
+
+  .scrolling-sx {
+    left: -0.8rem;
+  }
+
+}
+
+
+
+/* Cosa faccio? */
+.skill-heading {
+  margin-bottom: 0.3rem;
+}
+
+.skill-container{
+
+  .text-content {
+    padding-bottom: 1rem;
+    width: 90%;
+
+    div {
+      margin-top: 0.5rem;
+    }
+  }
+
+  .devicon-icon {
+    font-size: 5rem;
+    padding: 1rem;
+    color: darken(#1d313f, 10%);
+    transition: 0.3s;
+  }
+
+  .devicon-icon:hover {
+    transform: scale(1.2);
+  }
+
+  .devicon {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .coming-soon{
+    width: 90%;
+
+    h5 {
+      padding: 2rem 0 0.5rem 0;
+      text-align: center;
+      color: #b02f2f;
+    }
+
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+
+/*Portfolio*/
+.portfolio-heading {
+  margin-bottom: 0.5rem;
+}
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+
+  .photo-grid {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .photo-grid-item {
+      border: 0.1rem dashed #2D4A56;
+      width: 250px;
+      height: 250px;
+      margin: 0.1rem;
+    }
+
+    .item-1, 
+    .item-2 {
+      border-style: none;
+      transition: 0.5s; /*Transition vale sia quanto mouse hover sopra l'immagine sia quando si allontana; se lo mettessi come proprietà di hover, varrebbe solo per hover*/
+
+      img {
+        opacity: 0.9;
+        transition: opacity 0.5s ease;
+      }
+      img:hover {
+        opacity: 1;
+      }
+    }
+
+    .item-1:hover,
+    .item-2:hover {
+      z-index: 1;
+      transform: scale(0.90);
+      box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
+    }
+
+    /*Slot vuoti*/
+    .item-3 {
+      font-size: 5rem;
+      color: #2D4A56;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 2s ease;
+    }
+
+    .item-3:hover,
+    .item-4:hover,
+    .item-5:hover,
+    .item-6:hover,
+    .item-7:hover,
+    .item-8:hover {
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+
+/* Contact */
+.contact-container {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+
+  .content {
+    width: 70%;
+
+    div {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.contact-container > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.plane {
+  align-self: center;
+  font-size: 3rem;
+  transition: 0.4s;
+  margin-left: 2rem;
+  color: #b02f2f;
+}
+
+.plane:hover {
+  transform: translate(1.5rem, -1.5rem);
+}
+
+
+
+
+
+
+@import "chi-sono";
+@import "cosa-faccio";
+@import "portfolio";
+@import "marameo";
+@import "un-singolo-grammo-di-cielo";
+@import "contatti";
+@import "media-query";

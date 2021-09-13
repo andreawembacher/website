@@ -1,0 +1,94 @@
+.chisono-title {
+  margin-bottom: 1rem;
+
+  .body {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.chisono-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+
+
+/////////////////////////////////////////
+//Media queries//
+
+/* extra-small screen */
+@media (max-width: 400px){
+  .chisono-container {
+    width: 90%;
+  }
+
+  .chisono-picture {
+    width: 80%;
+  }
+}
+
+
+/* small-screen */
+@media (min-width: 400px) and (max-width: 576px) {
+  .chisono-container {
+    width: 90%;
+  }
+
+  .chisono-picture {
+    width: 80%;
+  }
+}
+
+
+/* medium-screen */
+@media (min-width: 576px) and (max-width: 768px) {
+  .chisono-text {
+    width: 50%;
+  }
+
+  .chisono-picture {
+    width: 40%;
+    margin-left: 1.8rem;
+  }
+}
+
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 992px) {
+  .chisono-text {
+    width: 55%;
+  }
+
+  .chisono-picture {
+    width: 30%;
+    margin: 0 auto;
+  }
+}
+
+
+/* large-screen */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .chisono-text {
+    width: 55%;
+  }
+
+  .chisono-picture {
+    width: 25%;
+    margin: 0 auto;
+  }
+}
+
+
+/* Extra large screen */
+@media (min-width: 1200px) {
+  .chisono-text {
+    width: 55%;
+  }
+
+  .chisono-picture {
+    width: 25%;
+    margin: 0 auto;
+  }
+}

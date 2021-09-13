@@ -1,0 +1,160 @@
+.marameo-title {
+  margin-bottom: 1rem;
+
+  .body {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.marameo-text-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+///Media queries///////////////
+
+/* extra-small screen */
+@media (max-width: 400px){
+  .marameo-container {
+    width: 85%;
+  }
+
+  .marameo-text-img {
+    .img3 {
+      display: none;
+    }
+  }
+}
+
+
+/* small-screen */
+@media (min-width: 400px) and (max-width: 576px) {
+  .marameo-container {
+    width: 85%;
+  }
+
+  .marameo-text-img {
+    .img3 {
+      display: none;
+    }
+  }
+}
+
+
+/* medium-screen */
+@media (min-width: 576px) and (max-width: 768px) {
+  .marameo-text-img {
+    margin-bottom: 1rem;
+
+    .text {
+      width: 50%;
+      order: 1;
+    }
+
+    .img {
+      width: 40%;
+      margin-right: 1.5rem;
+    }
+
+    .img2 {
+      order: 1;
+      margin-left: 1.5rem;
+      margin-right: 0;
+    }
+  }
+}
+
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 992px) {
+  .marameo-text-img {
+    margin-bottom: 1rem;
+
+    .text {
+      width: 50%;
+      order: 1;
+    }
+
+    .text1,
+    .text3 {
+      margin: 0 auto;
+    }
+
+    .img {
+      width: 25%;
+      margin-right: 1.5rem;
+    }
+
+    .img2 {
+      order: 1;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+/* large-screen */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .marameo-text-img {
+    margin-bottom: 1rem;
+
+    .text {
+      width: 45%;
+      order: 1;
+    }
+
+    .text1 {
+      margin: 0 auto;
+    }
+
+    .text3 {
+      margin: 0 auto;
+      align-self: center;
+    }
+
+    .img {
+      width: 25%;
+      margin-right: 1.5rem;
+    }
+
+    .img2 {
+      order: 1;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+
+/* Extra large screen */
+@media (min-width: 1200px) {
+  .marameo-text-img {
+    margin-bottom: 1rem;
+
+    .text {
+      width: 45%;
+      order: 1;
+    }
+
+    .text1 {
+      margin: 0 auto;
+    }
+
+    .text3 {
+      margin: 0 auto;
+      align-self: center;
+    }
+
+    .img {
+      width: 25%;
+      margin-right: 1.5rem;
+    }
+
+    .img2 {
+      order: 1;
+      margin: 0 auto;
+    }
+  }
+}
