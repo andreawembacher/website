@@ -513,7 +513,8 @@ footer > div{
     }
 
     .item-1, 
-    .item-2 {
+    .item-2,
+    .item-3 {
       border-style: none;
       transition: 0.5s; /*Transition vale sia quanto mouse hover sopra l'immagine sia quando si allontana; se lo mettessi come proprietà di hover, varrebbe solo per hover*/
 
@@ -527,14 +528,15 @@ footer > div{
     }
 
     .item-1:hover,
-    .item-2:hover {
+    .item-2:hover,
+    .item-3:hover {
       z-index: 1;
       transform: scale(0.90);
       box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
     }
 
     /*Slot vuoti*/
-    .item-3 {
+    .item-4 {
       font-size: 5rem;
       color: #2D4A56;
       display: flex;
@@ -543,7 +545,6 @@ footer > div{
       transition: transform 2s ease;
     }
 
-    .item-3:hover,
     .item-4:hover,
     .item-5:hover,
     .item-6:hover,
@@ -596,5 +597,6 @@ footer > div{
 @import "portfolio";
 @import "marameo";
 @import "un-singolo-grammo-di-cielo";
+@import "time-machine";
 @import "contatti";
 @import "media-query";

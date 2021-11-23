@@ -67,14 +67,14 @@
   animation: animate 1s cubic-bezier(1, 0.8, 0.6, 0.8) forwards;
 }
 .progress-line.javascript span {
-  width: 40% !important;
+  width: 50% !important;
   background-color: #323330;
   transform: scaleX(0);
   transform-origin: left;
   animation: animate 1s cubic-bezier(1, 0.8, 0.6, 0.8) forwards;
 }
 .progress-line.sass span {
-  width: 65% !important;
+  width: 60% !important;
   background-color: #cc6699;
   transform: scaleX(0);
   transform-origin: left;
